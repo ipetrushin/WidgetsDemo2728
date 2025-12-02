@@ -1,6 +1,7 @@
 package com.example.widgetsdemo2728
 
 import android.os.Bundle
+import android.view.View
 import android.widget.CheckBox
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
                 // Checkbox is unchecked
             }
         }
+        binding.testbox.visibility = View.INVISIBLE
         binding.testbox.setOnCheckedChangeListener {
                 buttonView, isChecked -> // Handle the checked state change here
             if (isChecked) {
